@@ -76,7 +76,7 @@
 
             <Image x:Name="Image" HorizontalAlignment="Left" VerticalAlignment="Top"
 					Grid.Row="0"
-					Source="/Assets/war_of_the_worlds_doomsday_final.jpg" Opacity="0.495" Height="100" Width="480" Stretch="UniformToFill" Tap="image_Tap"/>
+					Source="/Assets/war_of_the_worlds_doomsday_final.jpg" Opacity="0.4" Height="100" Width="480" Stretch="UniformToFill" Tap="image_Tap"/>
             <Image x:Name="IconExpand" Grid.Row="0" Width="40"
                    Source="/Assets/arrow.expand.png" HorizontalAlignment="Right" VerticalAlignment="Top" IsHitTestVisible="False" />
             <ScrollViewer Name="ScrollViewer"
