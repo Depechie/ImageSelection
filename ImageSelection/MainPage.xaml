@@ -95,7 +95,6 @@
                     </Paragraph>
                 </RichTextBox>
             </ScrollViewer>
-
         </Grid>
 
         <!--Uncomment to see an alignment grid to help ensure your controls are
