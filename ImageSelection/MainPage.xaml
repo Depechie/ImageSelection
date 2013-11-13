@@ -31,9 +31,9 @@
                 </VisualState>
                 <VisualState x:Name="OpenState">
                     <Storyboard>
-                        <DoubleAnimation Duration="0:0:0.4" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Image" d:IsOptimized="True"/>
-                        <DoubleAnimation Duration="0:0:0.4" To="250" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="Image" d:IsOptimized="True"/>
-                    	<DoubleAnimation Duration="0:0:0.4" To="0" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="IconExpand" d:IsOptimized="True"/>
+                        <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Image" d:IsOptimized="True"/>
+                        <DoubleAnimation Duration="0" To="250" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="Image" d:IsOptimized="True"/>
+                    	<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="IconExpand" d:IsOptimized="True"/>
                     </Storyboard>
                 </VisualState>
             </VisualStateGroup>
