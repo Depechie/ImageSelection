@@ -13,8 +13,8 @@ namespace ImageSelection
 {
     public partial class MainPage : PhoneApplicationPage
     {
-		private bool _isOpen = false;
-		
+        private bool _isOpen = false;
+
         // Constructor
         public MainPage()
         {
@@ -26,32 +26,16 @@ namespace ImageSelection
 
         private void image_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-			if (_isOpen)
-			{
-			VisualStateManager.GoToState(this, "ClosedState", true);
-			_isOpen = false;
-			}
-			else
-			{
-			VisualStateManager.GoToState(this, "OpenState", true);
-			_isOpen = true;
-			}
+            if (_isOpen)
+            {
+                VisualStateManager.GoToState(this, "ClosedState", true);
+                _isOpen = false;
+            }
+            else
+            {
+                VisualStateManager.GoToState(this, "OpenState", true);
+                _isOpen = true;
+            }
         }
-
-        // Sample code for building a localized ApplicationBar
-        //private void BuildLocalizedApplicationBar()
-        //{
-        //    // Set the page's ApplicationBar to a new instance of ApplicationBar.
-        //    ApplicationBar = new ApplicationBar();
-
-        //    // Create a new button and set the text value to the localized string from AppResources.
-        //    ApplicationBarIconButton appBarButton = new ApplicationBarIconButton(new Uri("/Assets/AppBar/appbar.add.rest.png", UriKind.Relative));
-        //    appBarButton.Text = AppResources.AppBarButtonText;
-        //    ApplicationBar.Buttons.Add(appBarButton);
-
-        //    // Create a new menu item with the localized string from AppResources.
-        //    ApplicationBarMenuItem appBarMenuItem = new ApplicationBarMenuItem(AppResources.AppBarMenuItemText);
-        //    ApplicationBar.MenuItems.Add(appBarMenuItem);
-        //}
     }
 }
