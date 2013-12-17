@@ -24,11 +24,7 @@
                         </VisualTransition.GeneratedEasingFunction>
                     </VisualTransition>
                 </VisualStateGroup.Transitions>
-                <VisualState x:Name="ClosedState">
-                    <Storyboard>
-                        <DoubleAnimation Duration="0" To="0.4" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Image" d:IsOptimized="True"/>
-                    </Storyboard>
-                </VisualState>
+                <VisualState x:Name="ClosedState" />
                 <VisualState x:Name="OpenState">
                     <Storyboard>
                         <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Image" d:IsOptimized="True"/>
