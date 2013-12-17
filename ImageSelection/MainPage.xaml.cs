@@ -13,8 +13,6 @@ namespace ImageSelection
 {
     public partial class MainPage : PhoneApplicationPage
     {
-        private bool _isOpen = false;
-
         // Constructor
         public MainPage()
         {
@@ -26,16 +24,10 @@ namespace ImageSelection
 
         private void image_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            if (_isOpen)
-            {
+            if (this.Image.Height > 100)
                 VisualStateManager.GoToState(this, "ClosedState", true);
-                _isOpen = false;
-            }
             else
-            {
                 VisualStateManager.GoToState(this, "OpenState", true);
-                _isOpen = true;
-            }
         }
     }
 }
